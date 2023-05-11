@@ -4,6 +4,11 @@
 
 
 
+
+
+
+
+
 1. **-type**
 
 
@@ -145,4 +150,5 @@ Quickly was able to determine if a directory with the last letter of s existed w
 
 ### Source/Reference
 [Github BashFind Command](https://math2001.github.io/article/bashs-find-command/)
+
 [Base-Name-Patterns](https://www.gnu.org/software/findutils/manual/html_mono/find.html#Base-Name-Patterns)
