@@ -1,8 +1,11 @@
 # Lab Report 3
 
+
 ### The `find` Command
 
+
 1. **-type**
+
 
 *find -type f*
 ```
@@ -22,6 +25,7 @@ $ find -type f
 Type -f searches for all *file* types within the directory, very useful for searching
 for specific types of data.
 
+
 *find -type d*
 ```
 $ find -type d
@@ -40,6 +44,7 @@ $ find -type d
 Type -d searches for *directory* types within the directory which is useful to differentiate
 directories and files.
 
+
 **2. -name**
 
 ```
@@ -55,6 +60,7 @@ $ find -name "plos"
 ```
 Searches for a file containing the string "plos", which quickly allows me to determine
 whether the directory contains a certain file/directory.
+
 
 **3. -path**
 ```
@@ -74,6 +80,7 @@ $ find -path "*.txt"
 ```
 Extremely similar to -name, however it allows you to also include the entire path instead of just
 the file name.
+
 
 ```
 $ find -path "*0.txt"
@@ -101,6 +108,8 @@ $ find -path "*0.txt"
 Allows you to search for more than just the file name and able to trace back through
 multiple directories.
 
+
+
 4. **-and**
 ```
 $ find -name "*.txt" -type f
@@ -125,9 +134,14 @@ $ find -name "*.txt" -type f
 Allows one to combine multiple commands such as both -name and -type within the same search,
 which is helpful to further hone down the scope of a search.
 
+
 ```
 $ find -name "*s" -type d
 ./Alcohol_Problems
 ```
 Quickly was able to determine if a directory with the last letter of s existed within a certain folder.
 
+
+### Source/Reference
+[Github BashFind Command](https://math2001.github.io/article/bashs-find-command/)
+[Base-Name-Patterns](https://www.gnu.org/software/findutils/manual/html_mono/find.html#Base-Name-Patterns)
