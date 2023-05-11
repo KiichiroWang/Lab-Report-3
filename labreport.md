@@ -7,7 +7,6 @@
 1. **-type**
 
 
-
 *find -type f*
 ```
 $ find -type f
