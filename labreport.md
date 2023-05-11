@@ -1,11 +1,11 @@
 # Lab Report 3
 
-## The `find` Command
-1. find -type
+### The `find` Command
 
-find -type f
+1. **-type**
+
+*find -type f*
 ```
-darka@kiichi MINGW64 ~/OneDrive/Documents/Github/docsearch/technical (main)
 $ find -type f
 ./911report/chapter-1.txt
 ./911report/chapter-10.txt
@@ -19,10 +19,11 @@ $ find -type f
 ./biomed/1471-2091-2-13.txt
 ./biomed/1471-2091-2-16.txt
 ```
+Type -f searches for all *file* types within the directory, very useful for searching
+for specific types of data.
 
-find -type d
+*find -type d*
 ```
-darka@kiichi MINGW64 ~/OneDrive/Documents/Github/docsearch/technical (main)
 $ find -type d
 .
 ./911report
@@ -36,23 +37,27 @@ $ find -type d
 ./government/Post_Rate_Comm
 ./plos
 ```
+Type -d searches for *directory* types within the directory which is useful to differentiate
+directories and files.
 
-2. find -name
+**2. -name**
+
 ```
-darka@kiichi MINGW64 ~/OneDrive/Documents/Github/docsearch/technical (main)
 $ find -name "*.0020281.txt"
 ./plos/pmed.0020281.txt
 ```
+Find -name allows one to search for specific contents of a file, allowing one to quickly
+find specific files or directories.
 
 ```
-darka@kiichi MINGW64 ~/OneDrive/Documents/Github/docsearch/technical (main)
 $ find -name "plos"
 ./plos
 ```
+Searches for a file containing the string "plos", which quickly allows me to determine
+whether the directory contains a certain file/directory.
 
-3. find -path
+**3. -path**
 ```
-darka@kiichi MINGW64 ~/OneDrive/Documents/Github/docsearch/technical (main)
 $ find -path "*.txt"
 ./911report/chapter-1.txt
 ./911report/chapter-10.txt
@@ -67,9 +72,10 @@ $ find -path "*.txt"
 ./911report/chapter-3.txt
 ./911report/chapter-5.txt
 ```
+Extremely similar to -name, however it allows you to also include the entire path instead of just
+the file name.
 
 ```
-darka@kiichi MINGW64 ~/OneDrive/Documents/Github/docsearch/technical/plos (main)
 $ find -path "*0.txt"
 ./journal.pbio.0020010.txt
 ./journal.pbio.0020040.txt
@@ -92,9 +98,11 @@ $ find -path "*0.txt"
 ./pmed.0020020.txt
 ./pmed.0020040.txt
 ```
-4. find -and
+Allows you to search for more than just the file name and able to trace back through
+multiple directories.
+
+4. **-and**
 ```
-darka@kiichi MINGW64 ~/OneDrive/Documents/Github/docsearch/technical/911report (main)
 $ find -name "*.txt" -type f
 ./chapter-1.txt
 ./chapter-10.txt
@@ -114,9 +122,12 @@ $ find -name "*.txt" -type f
 ./chapter-9.txt
 ./preface.txt
 ```
+Allows one to combine multiple commands such as both -name and -type within the same search,
+which is helpful to further hone down the scope of a search.
 
 ```
-darka@kiichi MINGW64 ~/OneDrive/Documents/Github/docsearch/technical/government (main)
 $ find -name "*s" -type d
 ./Alcohol_Problems
 ```
+Quickly was able to determine if a directory with the last letter of s existed within a certain folder.
+
