@@ -1,6 +1,6 @@
 # Lab Report 3
 
-##The `find` Command
+## The `find` Command
 1. find -type
 
 find -type f
