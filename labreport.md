@@ -3,17 +3,6 @@
 ### The `find` Command
 
 
-
-
-
-
-
-
-
-
-
-
-
 1. **-type**
 
 *find -type f*
