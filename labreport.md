@@ -1,10 +1,11 @@
 # Lab Report 3
 
-
 ### The `find` Command
 
 
+
 1. **-type**
+
 
 
 *find -type f*
@@ -24,6 +25,7 @@ $ find -type f
 ```
 Type -f searches for all *file* types within the directory, very useful for searching
 for specific types of data.
+
 
 
 *find -type d*
